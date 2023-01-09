@@ -34,8 +34,8 @@
     }
 
     if (card1 && card2) {
-      let gif1 = card1.children[1].children[0].src;
-      let gif2 = card2.children[1].children[0].src;
+      let gif1 = card1.children[1].children[0].alt;
+      let gif2 = card2.children[1].children[0].alt;
 
       if (gif1 === gif2) {
         cardsFlipped += 2;
@@ -67,7 +67,7 @@
 
     for (let i = 0; i < cards.length; i++) {
       let path = "gifs/" + pairs[i] + ".gif";
-      cards[i].children[1].children[0].src = path;
+      cards[i].children[1].children[0].alt = path;
     }
   }
 
