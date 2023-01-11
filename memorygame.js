@@ -67,18 +67,18 @@
     let pairs = shuffle(indices.concat(indices));
     
     let gifObj = {
-  1:'baby-horse',
-  2:'barrel-horse',
-  3:'black-horse',
-  4:'escape-horse',
-  5:'grey-horse',
-  6:'jump-horse',
-  7:'pony-horse',
-  8:'race-horse',
-  9:'roll-horse',
-  10:'smile-horse',
-  11:'vault-horse',
-  12:'water-horse'
+  horse1:'baby-horse',
+  horse2:'barrel-horse',
+  horse3:'black-horse',
+  horse4:'escape-horse',
+  horse5:'grey-horse',
+  horse6:'jump-horse',
+  horse7:'pony-horse',
+  horse8:'race-horse',
+  horse9:'roll-horse',
+  horse10:'smile-horse',
+  horse11:'vault-horse',
+  horse12:'water-horse'
 };
 
     for (let i = 0; i < cards.length; i++) {
