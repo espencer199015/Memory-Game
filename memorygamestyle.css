@@ -1,7 +1,6 @@
 body {
-  background-color: #CCBAA8;
+  background-image: url("horse-stable.jpg");
   text-align: center;
-  
 }
 
 #start-button {
@@ -23,7 +22,6 @@ body {
 
 #start {
   height: 100%;
-  width: 20%;
   width-bottom: 25%;
   font-family: 'Bungee', cursive;
   color: rgb(153, 8, 129);
