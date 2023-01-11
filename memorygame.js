@@ -60,30 +60,32 @@
     setScore(0);
     start.classList.add("playing");
     let indices = [];
-   let gifObj = {
-  1:'cat',
-  2:'homer',
-  3:'minion',
-  4:'kermit',
-  5:'obama',
-  6:'batman',
-  7:'manatee',
-  8:'hamster',
-  9:'girl',
-  10:'singer',
-  11:'mario',
-  12:'dog'
-};
-  alt = object[i];
+
     for (let i = 1; i <= numCards / 2; i++) {
       indices.push(i.toString());
     }
     let pairs = shuffle(indices.concat(indices));
+    
+    let gifObj = {
+  1:'baby-horse',
+  2:'barrel-horse',
+  3:'black-horse',
+  4:'escape-horse',
+  5:'grey-horse',
+  6:'jump-horse',
+  7:'pony-horse',
+  8:'race-horse',
+  9:'roll-horse',
+  10:'smile-horse',
+  11:'vault-horse',
+  12:'water-horse'
+};
 
     for (let i = 0; i < cards.length; i++) {
-      let path = "gifs/" + pairs[i] + ".gif";
-      cards[i].children[1].children[0].alt = path;
+      let path = "Horse-Gifs/" + pairs[i] + ".gif";
+      cards[i].children[1].children[0].src = path;
     }
+  alt = object[i];
   }
 
   function shuffle(array) {
