@@ -60,6 +60,21 @@
     setScore(0);
     start.classList.add("playing");
     let indices = [];
+   let gifObj = {
+  1:'cat',
+  2:'homer',
+  3:'minion',
+  4:'kermit',
+  5:'obama',
+  6:'batman',
+  7:'manatee',
+  8:'hamster',
+  9:'girl',
+  10:'singer',
+  11:'mario',
+  12:'dog'
+};
+  alt = object[i];
     for (let i = 1; i <= numCards / 2; i++) {
       indices.push(i.toString());
     }
