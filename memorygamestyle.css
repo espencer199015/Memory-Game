@@ -140,6 +140,13 @@ br {
   left: 0;
 }
 
+#restart-button {
+background-color: #3bbac5;
+border-color: rgb(243, 221, 177);
+border-radius: 50px;
+border-width: .5vh;
+}
+
 #end {
   display: none;
 }
@@ -147,14 +154,14 @@ br {
 #end.game-over {
   display: flex;
   position: absolute;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0, 0, 0, 0.658);
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: rgba(243, 221, 177, 0.897);
   justify-content: space-around;
   font-family: 'Bungee', cursive;
   text-align: center;
