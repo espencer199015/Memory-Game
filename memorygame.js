@@ -1,4 +1,4 @@
-  document.addEventListener("DOMContentLoaded", function() {
+ document.addEventListener("DOMContentLoaded", function() {
   const cards = document.querySelectorAll(".game-card");
   let numCards = cards.length;
   let card1 = null;
@@ -82,13 +82,12 @@
     };
 
     for (let i = 0; i < cards.length; i++) {
-      let path = "Images" + pairs[i] + ".gif";
-     cards[i].children[1].childre[0].alt = gifObj[i];
+      let path = "Horse-Gifs/" + pairs[i] + ".gif";
+      //cards[i].children[1].childre[0].alt = gifObj[i];
       cards[i].children[1].children[0].src = path;
     }
-  alt = object[i];
+  //let alt = object[i];
   }
-
   function shuffle(array) {
     let arrayCopy = array.slice();
     for (let idx1 = arrayCopy.length - 1; idx1 > 0; idx1--) {
