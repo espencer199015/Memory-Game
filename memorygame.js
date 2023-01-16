@@ -7,6 +7,7 @@
   let currentScore = 0;
   let lowScore = localStorage.getItem("best-score");
   let start = document.getElementById("start");
+  
 
   if (lowScore) {
     document.getElementById("best-score").innerText = lowScore;
@@ -34,8 +35,8 @@
     }
 
     if (card1 && card2) {
-      let gif1 = card1.children[1].children[0].alt;
-      let gif2 = card2.children[1].children[0].alt;
+      let gif1 = card1.children[1].children[0].src;
+      let gif2 = card2.children[1].children[0].src;
 
       if (gif1 === gif2) {
         cardsFlipped += 2;
@@ -83,11 +84,12 @@
 
     for (let i = 0; i < cards.length; i++) {
       let path = "Horse-Gifs/" + pairs[i] + ".gif";
-      //cards[i].children[1].childre[0].alt = gifObj[i];
+      cards[i].children[1].children[0].src = gifObj[pairs[i]];
       cards[i].children[1].children[0].src = path;
     }
-  //let alt = object[i];
+    let src = object[i];
   }
+
   function shuffle(array) {
     let arrayCopy = array.slice();
     for (let idx1 = arrayCopy.length - 1; idx1 > 0; idx1--) {
